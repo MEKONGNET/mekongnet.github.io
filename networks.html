@@ -16,7 +16,7 @@
 
 <!--==============MAIN CSS FOR HOSTING PAGE=================-->
 
-<link href="css/hosting.css" rel="stylesheet" media="all">
+<link href="css/hosting.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -24,17 +24,16 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<!--==============Mordernizr =================-->
+<!--==============Mordernizr =================--> 
 
-<script src="js/modernizr.js"></script>
+<script src="js/modernizr.js"></script> 
 
-<!--===================Jquery=======================-->
+<!--==============JQuery=================-->
 
 <script src="js/jquery.min.js"></script>
 
 </head>
 <body>
-
 <!--==============Logo & Menu Bar=================-->
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
@@ -49,9 +48,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">HOME</a></li>
         <li class="hidden-sm"><a href="features.html">FEATURES</a></li>
-        <li class="active hidden-sm"><a href="testimonials.html">PARTNERS</a></li>
+        <li class="hidden-sm"><a href="testimonials.html">PARTNERS</a></li>
         <li><a href="pricing.html">PRICING</a></li>
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT SOLUTIONS <b class="caret"></b></a>
+        <li class="active dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT SOLUTIONS <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="blog.html">SERVERS</a></li>
             <li><a href="blog-post.html">NETWORKS</a></li>
@@ -73,69 +72,70 @@
 
 <div class="container"> 
   
-  <!--============== Testimonials ==============-->
-  <div class="row PageHead" id="testimonials">
+  <!--============== Blog ==============-->
+  
+  <div class="row PageHead">
+
     <div class="col-md-12">
-      <h1>Testimonials</h1>
-      <h3>Kind words from our valuable customers</h3>
+      <h1>Our Blog</h1>
+      <h3>Latest news and updates from MKN</h3>
     </div>
   </div>
-  <div class="row Testimonials">
-    <div class="col-sm-6 col-md-4 tm-data">
-      <div class="img-thumbnail"> <img src="images/client1.jpg" alt="client">
-        <div class="caption">
-          <p>MKN servers are having high physical security and power redundancy Your data will be secure with us.</p>
-          <h5>James, Envato</h5>
-        </div>
+  <div class="row blog">
+    <div class="col-md-9">
+      <div class="blogpost">
+        <h1 class="title">MKN Offers Dedicated Hosting</h1>
+        <h3 class="subtitle">Posted by <a href="#">Surjith SM</a> on 17 Jul 2013. <a href="#">16 comments</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.</p>
+        <p><a href="#Signup" role="button" data-toggle="modal" class="btn btn-success">READ MORE</a></p>
+      </div>
+      <div class="blogpost">
+        <h1 class="title">Managed Hosting vs Dedicated Hosting</h1>
+        <h3 class="subtitle">Posted by <a href="#">Surjith SM</a> on 17 Jul 2013. <a href="#">16 comments</a></h3>
+        <img src="images/blog-img1.png" alt="blog img">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.</p>
+        <p><a href="#Signup" role="button" data-toggle="modal" class="btn btn-success">READ MORE</a></p>
+      </div>
+      <div class="blogpost">
+        <h1 class="title">5 Pitfalls of Domain Registration</h1>
+        <h3 class="subtitle">Posted by <a href="#">Surjith SM</a> on 17 Jul 2013. <a href="#">16 comments</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.</p>
+        <p><a href="#Signup" role="button" data-toggle="modal" class="btn btn-success">READ MORE</a></p>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 tm-data">
-      <div class="img-thumbnail"> <img src="images/client2.jpg" alt="client">
-        <div class="caption">
-          <p>With our ultra mordern servers and optical cables, your data will be transfered to end user in milliseconds.</p>
-          <h5>Mariya, Activeden</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-0 tm-data">
-      <div class="img-thumbnail"> <img src="images/client3.jpg" alt="client">
-        <div class="caption">
-          <p>We have a dedicated team of support for sales and support to help you in anytime. You can also chat with us.</p>
-          <h5>Steven, Microlancer</h5>
-        </div>
-      </div>
+    <div class="col-md-3 sidebar">
+      <h3>Categories</h3>
+      <ul class="bloglist">
+        <li>Dedicated Servers</li>
+        <li>Managed Hosting</li>
+        <li>News and Updates</li>
+        <li>New Features</li>
+        <li>Domian Registration</li>
+        <li>Server Locations</li>
+      </ul>
+      <br>
+      <h3>Text Widget</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. <br>
+        <br>
+        Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit.</p>
+      <br>
+      <h3>Archieves</h3>
+      <ul class="bloglist">
+        <li>May 2013</li>
+        <li>April 2013</li>
+        <li>March 2013</li>
+        <li>February 2013</li>
+        <li>January 2013</li>
+        <li>December 2012</li>
+        <li>November 2012</li>
+        <li>October 2012</li>
+        <li>September 2012</li>
+        <li>August 2012</li>
+      </ul>
     </div>
   </div>
-  <div class="row Testimonials">
-    <div class="col-sm-6 col-md-4 tm-data">
-      <div class="img-thumbnail"> <img src="images/client1.jpg" alt="client">
-        <div class="caption">
-          <p>MKN servers are having high physical security and power redundancy Your data will be secure with us.</p>
-          <h5>James, Envato</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 tm-data">
-      <div class="img-thumbnail"> <img src="images/client2.jpg" alt="client">
-        <div class="caption">
-          <p>With our ultra mordern servers and optical cables, your data will be transfered to end user in milliseconds.</p>
-          <h5>Mariya, Activeden</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-0 tm-data">
-      <div class="img-thumbnail"> <img src="images/client3.jpg" alt="client">
-        <div class="caption">
-          <p>We have a dedicated team of support for sales and support to help you in anytime. You can also chat with us.</p>
-          <h5>Steven, Microlancer</h5>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!--Blog Closed--> 
   
-  <!--============== Partners List ==============-->
-  
-  <div class="row PartnersList"> <img src="images/logo1.jpg" alt="logo"> <img src="images/logo2.jpg" alt="logo"> <img src="images/logo3.jpg" alt="logo"> <img src="images/logo4.jpg" alt="logo"> <img src="images/logo5.jpg" alt="logo"> </div>
 </div>
 <!--Container Closed--> 
 
@@ -175,6 +175,7 @@
           <li><a href="mailto:sales@mekongnet.vn" target="_blank">sales@mekongnet.vn</a></li>
         </ul>
       </div>
+      
       <div class="col-sm-4 col-md-2">
         <p>LEGAL TERMS</p>
         <ul>
@@ -200,7 +201,7 @@
   </div>
 </div>
 
-<!--==============MODAL LOGIN=================--> 
+<!--==============MODAL LOGIN=================-->
 
 <!-- Modal -->
 <div class="modal fade LoginSignup" id="Login" tabindex="-1" role="dialog" aria-labelledby="LoginLabel" aria-hidden="true">
@@ -230,8 +231,11 @@
 </div>
 <!-- /.modal --> 
 
+
+
+
 <!--==============BOOTSTRAP JS=================--> 
 
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
 </body>
 </html>
