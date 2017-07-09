@@ -62,49 +62,20 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">           
-            <li class="active">
-              <a href="index.html" lang="en">HOME</a> 
-              <a href="index.html" lang="vi">TRANG CHỦ</a>
-            </li>
-            <li class="hidden-sm">
-              <a href="features.html" lang="en">FEATURES</a> 
-              <a href="features.html" lang="vi"> DỊCH VỤ</a>
-            </li>
-            <li class="hidden-sm">
-              <a href="testimonials.html" lang="en">PARTNERS</a>
-              <a href="testimonials.html" lang="vi">ĐỐI TÁC</a>
-              </li>
-            <li>
-              <a href="pricing.html" lang="en">PRICING</a> 
-              <a href="pricing.html" lang="vi">BẢNG GIÁ</a>
-            </li>
+            <li class="active"><a href="index.html" lang="en">HOME</a> <a href="index.html" lang="vi">TRANG CHỦ</a></li>
+            <li class="hidden-sm"><a href="features.html">FEATURES</a></li>
+            <li class="hidden-sm"><a href="testimonials.html">PARTNERS</a></li>
+            <li><a href="pricing.html">PRICING</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" lang="en">
-                IT SOLUTIONS 
-                <b class="caret"></b>
-              </a> 
-              <a href="index.html" lang="vi" >
-                GIẢI PHÁP IT
-                <b class="caret"></b>
-              </a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT SOLUTIONS <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="servers.html" lang="en">SERVERS</a> <a href="servers.html" lang="vi">MÁY CHỦ</a></li>
-                <li><a href="networks.html" lang="en">NETWORKS</a> <a href="networks.html" lang="vi">MẠNG</a></li>
+                <li><a href="blog.html">SERVERS</a></li>
+                <li><a href="blog-post.html">NETWORKS</a></li>
               </ul>
             </li>
-            <li>
-              <a href="contact.html" lang="en">CONTACT</a> 
-              <a href="contact.html" lang="vi">LIÊN HỆ</a>
-            </li>
-            <li>
-              <a href="#" role="button" data-toggle="modal" data-target="#Login" lang="en">Login</a>
-              <a href="#" role="button" data-toggle="modal" data-target="#Login" lang="vi">ĐĂNG NHẬP</a>
-            </li>
-            <!-- <li><a href="#" role="button" data-toggle="modal" data-target="#Login">Login</a></li> -->
-            <li>
-              <a href="portal/register.php" role="button" class="btn btn-success" lang="en">Sign Up</a> 
-              <a role="button" class="btn btn-success" href="portal/register.php" lang="vi">ĐĂNG KÝ</a>
-            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#" role="button" data-toggle="modal" data-target="#Login">Login</a></li>
+            <li><a href="portal/register.php" role="button" class="btn btn-success">Sign Up</a></li>
           </ul>
           </li>
           </ul>
@@ -281,34 +252,33 @@
       </div>
     </div>
     <!--==============MODAL LOGIN=================--> 
-
-<!-- Modal -->
-<div class="modal fade LoginSignup" id="Login" tabindex="-1" role="dialog" aria-labelledby="LoginLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="modal-title">Login</h3>
+    <!-- Modal -->
+    <div class="modal fade LoginSignup" id="Login" tabindex="-1" role="dialog" aria-labelledby="LoginLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Login</h3>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="https://www.mkn.vn/portal/client/dologin.php">
+              <div class="form-group">
+                <input class="form-control input-lg" type="text" name="username" size="50" placeholder="Email ID"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control input-lg" type="password" name="password" size="20" placeholder="Password"/>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Login to my Account" class="btn btn-success btn-lg"/>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /.modal-content --> 
       </div>
-      <div class="modal-body">
-        <form method="post" action="https://www.mekongnet.vn/portal/dologin.php">
-          <div class="form-group">
-            <input class="form-control input-lg" type="text" name="username" size="50" placeholder="Email ID"/>
-          </div>
-          <div class="form-group">
-            <input class="form-control input-lg" type="password" name="password" size="20" placeholder="Password"/>
-          </div>
-          <div class="form-group">
-            <input type="submit" value="Login to my Account" class="btn btn-success btn-lg"/>
-          </div>
-        </form>
-      </div>
+      <!-- /.modal-dialog --> 
     </div>
-    <!-- /.modal-content --> 
-  </div>
-  <!-- /.modal-dialog --> 
-</div>
-<!-- /.modal --> 
+    <!-- /.modal --> 
     
     <!--==============Language Button=================--> 
     <div class="vi"><a id="switch-lang" class="lang vi-text">VI</a></div>
@@ -331,7 +301,7 @@
       </ul>
     </div>
     <!--==============End Right Button=================-->     
-<script src="js/bootstrap.min.js"></script>
+
     <!--==============BOOTSTRAP JS=================--> 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -345,7 +315,7 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
-    <!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
   </body>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
